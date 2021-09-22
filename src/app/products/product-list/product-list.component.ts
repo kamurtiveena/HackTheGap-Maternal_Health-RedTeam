@@ -10,7 +10,7 @@ import { Product } from '../product';
 })
 export class ProductListComponent {
     rate: number;
-    pageTitle = 'wowCart';
+    pageTitle = 'Sankofa Cart';
     imageWidth = 80;
     imageHeight = 120;
     imageMargin = 12;

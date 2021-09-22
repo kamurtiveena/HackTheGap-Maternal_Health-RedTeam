@@ -11,7 +11,7 @@ const translations = '';
     providers: [{ provide: LOCALE_ID, useValue: translations }]
 })
 export class AppComponent implements DoCheck {
-    pageTitle = 'WOW';
+    pageTitle = 'Sankofa Maternal';
     loginTitle = 'Login';
     userName: string;
     registerTitle = 'Register';

@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "mcart"
+  "defaultProject": "mcart",
+  "cli": {
+    "analytics": "2bbc8376-e682-4d54-b4b8-924ad80d8eb6"
+  }
 }
