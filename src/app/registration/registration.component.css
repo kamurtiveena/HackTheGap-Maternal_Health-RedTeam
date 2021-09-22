@@ -1,0 +1,32 @@
+.container-styles{
+	position: relative; 
+	top: 180px;
+	width:50%
+}
+
+.padding{
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.panel-heading{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.link-underline{
+   color:#337ab7;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    position:relative;
+    left:50px;
+}
+
+.about-section {
+	padding: 50px;
+	text-align: left;
+	color:black;
+  }

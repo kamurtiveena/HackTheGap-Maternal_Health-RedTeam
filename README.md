@@ -1,6 +1,3 @@
-# HackTheGap-Maternal_Health-RedTeam
-Repository for maternal solutions by suggesting hospitals based on user choice
+# wowfrontend
 
-Clone the repositories and run :
-npm install
-npm run
+Focusing on Maternal Health for Women Empowerment !... Sounds good ! Our Vision is to empower women by strengthening their health and make them modern which strengthen both their community and India.

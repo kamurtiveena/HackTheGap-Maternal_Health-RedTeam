@@ -1,0 +1,53 @@
+<div class="container container-styles">
+	<div class="col-xs-11 col-xs-offset-2">
+		<div class="panel panel-primary">
+			<div class="panel-heading" style="font-weight: 600;">
+				All Users
+
+			</div>
+			<div class="panel-body padding">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Select</th>
+							<th scope="col">#</th>
+							<th scope="col">Name</th>
+							<th scope="col">Age</th>
+							<th scope="col">Qualification</th>
+							<th scope="col">Experience</th>
+							<th scope="col">Status</th>
+							<th scope="col">Week Hours</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let user of users;  let i = index">
+							<!-- Default checked -->
+							<th>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="defaultChecked2" checked>
+								</div>
+							</th>
+							<th scope="col">{{i+1}}</th>
+							<td scope="col">{{user.name}}</td>
+							<td scope="col">{{user.age}}</td>
+							<td scope="col">{{user.qualification}}</td>
+							<td scope="col">{{user.experience}}</td>
+							<td scope="col">{{user.status}}</td>
+							<td scope="col">{{user.weeklyhours}}</td>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<li>
+				<div class="btn-nav" style="padding-right:15px;float:right">
+					<a id="admin" class="btn btn-primary btn-small navbar-btn" (click)="showWork=1">Change status</a>
+				</div>
+
+			</li>
+			<div *ngIf="showWork"> Work in Progress</div>
+		</div>
+	</div>
+</div>
+<!-- <div style="padding-bottom: 100px;width: 10%;height: 10%;"> </div> -->

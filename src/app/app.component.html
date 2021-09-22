@@ -1,0 +1,63 @@
+<div>
+	<!-- Header with two social icons on the left and a login button on the right -->
+	<nav class='navbar navbar-default navbar-fixed-top'>
+		<div class='container-fluid'>
+			<ul class="social-network social-circle iconpos">
+				<li><a href="#" class="icoHome" title="Facebook"><i
+							class="fa fa-home fa-1x"></i></a></li>
+				<li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i
+							class="fa fa-facebook fa-1x"></i></a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="https://twitter.com/" class="icoTwitter" title="Twitter"><i
+							class="fa fa-twitter fa-1x"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="panel-heading text-right" style="display:none;padding:0px;position:relative;top:15px;"
+						id="welcome">Welcome {{userName | titlecase}}</div>
+				</li>
+				<li class="divider-vertical"></li>
+
+				<li>{{ getText}}
+					<div class="btn-nav" style="padding-right:15px;padding-top:10px">
+						<tts></tts>
+					</div>
+				</li>
+				<li>
+					<div class="btn-nav" style="padding-right:15px">
+						<a id="skills" class="btn btn-primary btn-small navbar-btn"
+							(click)="skills()">{{skillsTitle}}</a>
+					</div>
+
+				</li>
+				<li>
+					<div class="btn-nav" style="padding-right:15px">
+						<a id="register" class="btn btn-primary btn-small navbar-btn"
+							(click)="register()">{{registerTitle}}</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="btn-nav" style="padding-right:15px">
+						<a id="login" class="btn btn-primary btn-small navbar-btn" (click)="login()">{{loginTitle}}</a>
+					</div>
+				</li>
+				<li>
+					<div class="btn-nav" style="padding-right:15px">
+						<a id="admin" class="btn btn-primary btn-small navbar-btn"
+							(click)="adminLogin()">{{adminPanel}}</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Loads the component based on the route path -->
+	<router-outlet></router-outlet>
+	<!-- <map-app-root></map-app-root> -->
+	<nav class='navbar navbar-default navbar-fixed-bottom'>
+		<div style="padding-left: 550px;padding-top:10px;font-weight: 600;">Powered by WOW </div>
+		<!-- <div style="padding-left: 535px;">WOW members are awesome</div> -->
+	</nav>
+</div>

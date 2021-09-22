@@ -1,0 +1,30 @@
+
+.logo-styles{
+	width: 50px; 
+	font-size: 50px; 
+	color: #ff0080
+}
+
+.title-styles{
+	text-align: center; 
+	color: #337ab7; 
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.text-styles{
+	color :  whitesmoke;
+	font-size: 15px
+}
+
+.container-styles{
+	position: relative; 
+	top: 180px;
+	width:50%
+}
+.about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #337ab7;
+	color: white;
+  }
